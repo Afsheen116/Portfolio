@@ -1,0 +1,315 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body text (Lato) */
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #2c2c2c;
+  background: radial-gradient(circle, #ebedeb, #764ba2);
+  line-height: 1.7;
+}
+
+/* Headings (Playfair Display) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #3a0d63; /* deep elegant purple */
+}
+
+/* Paragraphs, links */
+p, a, li, span {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Logo */
+.logo img {
+  max-height: 130px;  /* adjust size */
+  width:auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* small pop effect on hover */
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle, #ebedeb, #9f78c6);
+  color: #333;
+}/* Navbar */
+
+.navbar {
+  position: fixed; 
+   height: 130px;     /* Stays fixed on scroll */
+  top: 10px;
+  left: 50%;
+  width: 60%;
+   margin-top:10px;
+   transform: translateX(-50%);
+  background:   radial-gradient(circle, #ebedeb, #9f78c6);
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;        /* Stays above all elements */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 5.2);
+   border-radius: 20px;
+}
+
+/* Logo */
+.logo {
+  color: rgb(104, 42, 133);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #ffd700;  /* Golden accent for “Dev” */
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+ color: rgb(104, 42, 133);
+  text-decoration: none;
+  font-weight: 900;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffd700; /* Hover color */
+}
+/* Projects Section */
+.projects {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-top: 110px;
+  color: rgb(104, 42, 133);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Grid Container */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 250px; 
+  cursor: pointer;  
+}
+
+
+
+.project-card img {
+  width: 100%;
+  height: 100%;        
+  object-fit: cover;   
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(104, 42, 133, 0.85);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+}
+
+.overlay h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffd700;
+  color: rgb(104, 42, 133);
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+/* Bounce Effect for Button */
+.project-btn:hover {
+  animation: bounce 0.6s;
+}
+
+
+
+
+
+.project-card:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  box-shadow:rgb(104, 42, 133);
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(104, 42, 133, 0.85);
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1100px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Left Profile Card */
+.contact-card {
+  flex: 1;
+  min-width: 280px;
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+
+.contact-card .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.contact-card h3 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.contact-card p {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-links a {
+  color: #fff;
+  font-size: 40px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #ffd700;
+}
+
+/* Right Contact Form */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.2);
+  color: #150707;
+  
+}
+input::placeholder,
+textarea::placeholder {
+  color: rgb(252, 245, 255); 
+  font-style: italic;
+  opacity: 0.8;
+}
+
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  background: #f1f1ec;
+  color: #bc21db;
+  padding: 22px;
+  border: none;
+  border-radius: 80px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background:  #ffd700;
+}
+
+
+
+
