@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Developer | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="Portfolio of a Full Stack Developer specializing in modern web applications.">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Home">
+                <!-- SVG Filter to dynamically remove background and recolor the white logo -->
+                <svg class="dynamic-logo" width="160" height="45">
+                    <defs>
+                        <filter id="isolate-logo" color-interpolation-filters="sRGB">
+                            <feColorMatrix type="luminanceToAlpha" result="alpha-mask"/>
+                            <feComponentTransfer in="alpha-mask" result="thresholded-alpha">
+                                <feFuncA type="linear" slope="3.5" intercept="-1.5"/>
+                            </feComponentTransfer>
+                            <feFlood flood-color="currentColor" result="solid-color"/>
+                            <feComposite in="solid-color" in2="thresholded-alpha" operator="in"/>
+                        </filter>
+                    </defs>
+                    <!-- Uses the image the user uploaded and saved to assets directory -->
+                    <image href="assets/Logo.png" x="0" y="0" width="160" height="45" preserveAspectRatio="xMinYMid meet" filter="url(#isolate-logo)" />
+                </svg>
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section-spacing">
+        <div class="container hero-content">
+            <div class="hero-text hidden-left">
+                <!-- SVG Draw Animation for Name -->
+                <svg class="name-svg" viewBox="0 0 900 120" preserveAspectRatio="xMinYMid meet">
+                    <text x="0" y="80%" class="name-text">AFSHEEN SHEIKH</text>
+                </svg>
+                <h2 class="role-title">Fullstack Developer</h2>
+                <p class="subtitle">Building premium, high-performance web applications with a focus on modern aesthetic
+                    design and robust backend infrastructure.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#resume" class="btn btn-primary">My Resume</a>
+                </div>
+            </div>
+            <div class="hero-image hidden-right" style="transition-delay: 0.2s;">
+                <div class="image-wrapper">
+                    <img src="assets/hero_bg.png" alt="Abstract 3D Technology Illustration">
+                    <div class="glass-float quote-float float-1">"Code is Poetry"</div>
+                    <div class="glass-float quote-float float-2">"AI is the New UI"</div>
+                    <div class="glass-float quote-float float-3">"Think. Create. Deploy."</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-spacing glass-section">
+        <div class="container pattern-bg">
+            <div class="section-header hidden-up">
+                <h2>About <span class="highlight">Me</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card hidden-right" style="transition-delay: 0.2s;">
+                    <span class="about-card-label">Core Focus</span>
+                    <h3>Crafting polished products from concept to deployment.</h3>
+                    <p>I enjoy designing interfaces with strong visual identity, building resilient APIs, and turning
+                        ambitious ideas into smooth, production-ready experiences.</p>
+                    <div class="about-points">
+                        <span class="about-pill">Modern Frontend Systems</span>
+                        <span class="about-pill">Scalable Backend Architecture</span>
+                        <span class="about-pill">Performance and Accessibility</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-spacing">
+        <div class="container">
+            <div class="section-header hidden-up">
+                <h2>Prism <span class="highlight">Skills</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="skills-showcase hidden-up" style="transition-delay: 0.2s;">
+                <p class="skills-intro">A focused stack shaped around immersive interfaces, scalable logic, and clean
+                    developer workflows.</p>
+                <div class="skills-grid prism-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript (ES6+)</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react"></i>
+                        <span>React.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-node"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <span>PostgreSQL / MongoDB</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3 / Tailwind</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-server"></i>
+                        <span>Express / REST APIs</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git & CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-spacing">
+        <div class="container">
+            <div class="section-header hidden-up">
+                <h2>Selected <span class="highlight">Projects</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="projects-shell hidden-up" style="transition-delay: 0.2s;">
+                <div class="project-dots" aria-label="Project pagination"></div>
+                <div class="project-stage" aria-live="polite" id="projectStage">
+                    <p class="project-feedback" id="projectFeedback">Loading projects...</p>
+                    <div class="project-controls">
+                        <button class="project-nav prev" type="button" aria-label="Previous project">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="project-nav next" type="button" aria-label="Next project">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-spacing">
+        <div class="container">
+            <div class="section-header hidden-up">
+                <h2>Get In <span class="highlight">Touch</span></h2>
+                <div class="line"></div>
+                <p class="contact-sub">Available for freelance opportunities or full-time roles.</p>
+            </div>
+
+            <div class="contact-wrapper hidden-up" style="transition-delay: 0.2s;">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>hello@example.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Global / Remote</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="contactName" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contactEmail" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message <i
+                            class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Full Stack Developer. All rights reserved.</p>
+            <p>Designed with a premium minimalist touch.</p>
+        </div>
+    </footer>
+    <script>
+        window.PORTFOLIO_API_BASE_URL = window.PORTFOLIO_API_BASE_URL || "http://localhost:5000/api";
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
