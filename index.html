@@ -20,16 +20,17 @@
                 <svg class="dynamic-logo" width="160" height="45">
                     <defs>
                         <filter id="isolate-logo" color-interpolation-filters="sRGB">
-                            <feColorMatrix type="luminanceToAlpha" result="alpha-mask"/>
+                            <feColorMatrix type="luminanceToAlpha" result="alpha-mask" />
                             <feComponentTransfer in="alpha-mask" result="thresholded-alpha">
-                                <feFuncA type="linear" slope="3.5" intercept="-1.5"/>
+                                <feFuncA type="linear" slope="3.5" intercept="-1.5" />
                             </feComponentTransfer>
-                            <feFlood flood-color="currentColor" result="solid-color"/>
-                            <feComposite in="solid-color" in2="thresholded-alpha" operator="in"/>
+                            <feFlood flood-color="currentColor" result="solid-color" />
+                            <feComposite in="solid-color" in2="thresholded-alpha" operator="in" />
                         </filter>
                     </defs>
                     <!-- Uses the image the user uploaded and saved to assets directory -->
-                    <image href="assets/Logo.png" x="0" y="0" width="160" height="45" preserveAspectRatio="xMinYMid meet" filter="url(#isolate-logo)" />
+                    <image href="assets/Logo.png" x="0" y="0" width="160" height="45"
+                        preserveAspectRatio="xMinYMid meet" filter="url(#isolate-logo)" />
                 </svg>
             </a>
             <div class="hamburger">
@@ -101,7 +102,7 @@
     <section id="skills" class="skills-section section-spacing">
         <div class="container">
             <div class="section-header hidden-up">
-                <h2>Technical  <span class="highlight">Skills</span></h2>
+                <h2>Technical <span class="highlight">Skills</span></h2>
                 <div class="line"></div>
             </div>
             <div class="skills-showcase hidden-up" style="transition-delay: 0.2s;">
@@ -191,12 +192,13 @@
                         <p>Global / Remote</p>
                     </div>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/Afsheen116"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/afsheen-sheikh-50aba833a"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/917734930921??text=Hello%20Afsheen%2C%20I%20came%20across%20your%20portfolio"
+                            target="_blank" class="social-icon">"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-<!--comment
+                <!--comment
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <input type="text" id="contactName" name="name" placeholder="Your Name" required>
