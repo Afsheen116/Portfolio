@@ -15,7 +15,7 @@
     <!-- Navigation -->
     <header class="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo" aria-label="Home">
+            <a href="index.html" class="logo" aria-label="Home">
                 <!-- SVG Filter to dynamically remove background and recolor the white logo -->
                 <svg class="dynamic-logo" width="160" height="45">
                     <defs>
@@ -171,6 +171,21 @@
     </section>
 
     <!-- Contact Section -->
+     <svg class="dynamic-logo" width="160" height="45">
+                    <defs>
+                        <filter id="isolate-logo" color-interpolation-filters="sRGB">
+                            <feColorMatrix type="luminanceToAlpha" result="alpha-mask" />
+                            <feComponentTransfer in="alpha-mask" result="thresholded-alpha">
+                                <feFuncA type="linear" slope="3.5" intercept="-1.5" />
+                            </feComponentTransfer>
+                            <feFlood flood-color="currentColor" result="solid-color" />
+                            <feComposite in="solid-color" in2="thresholded-alpha" operator="in" />
+                        </filter>
+                    </defs>
+                    <!-- Uses the image the user uploaded and saved to assets directory -->
+                    <image href="assets/Logo.png" x="0" y="0" width="160" height="45"
+                        preserveAspectRatio="xMinYMid meet" filter="url(#isolate-logo)" />
+                </svg>
     <section id="contact" class="contact section-spacing">
         <div class="container">
             <div class="section-header hidden-up">
