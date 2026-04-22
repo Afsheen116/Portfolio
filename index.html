@@ -171,21 +171,13 @@
     </section>
 
     <!-- Contact Section -->
-     <svg class="dynamic-logo" width="160" height="45">
-                    <defs>
-                        <filter id="isolate-logo" color-interpolation-filters="sRGB">
-                            <feColorMatrix type="luminanceToAlpha" result="alpha-mask" />
-                            <feComponentTransfer in="alpha-mask" result="thresholded-alpha">
-                                <feFuncA type="linear" slope="3.5" intercept="-1.5" />
-                            </feComponentTransfer>
-                            <feFlood flood-color="currentColor" result="solid-color" />
-                            <feComposite in="solid-color" in2="thresholded-alpha" operator="in" />
-                        </filter>
-                    </defs>
-                    <!-- Uses the image the user uploaded and saved to assets directory -->
-                    <image href="assets/Logo.png" x="0" y="0" width="160" height="45"
-                        preserveAspectRatio="xMinYMid meet" filter="url(#isolate-logo)" />
+
+                <!-- SVG Draw Animation for Name -->
+                <svg class="name-svg" viewBox="0 0 900 120" preserveAspectRatio="xMinYMid meet">
+                    <text x="0" y="80%" class="name-text">AFSHEEN SHEIKH</text>
                 </svg>
+                <h2 class="role-title">Fullstack Developer</h2>
+ 
     <section id="contact" class="contact section-spacing">
         <div class="container">
             <div class="section-header hidden-up">
