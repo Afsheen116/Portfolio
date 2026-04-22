@@ -1163,7 +1163,7 @@ h2 {
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    gap: 4rem;
+    gap: 2rem;
 
     /* Highly Transparent Glassmorphism Effect */
     background: rgba(255, 255, 255, 0.03);
@@ -1175,14 +1175,14 @@ h2 {
     /* Delicate white border */
     box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.05), 0 30px 60px rgba(0, 0, 0, 0.3);
 
-    padding: 3rem;
+    padding: 1rem;
     border-radius: var(--radius-lg);
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .info-item p {
