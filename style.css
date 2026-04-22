@@ -1149,6 +1149,7 @@ h2 {
 .contact .section-header .contact-sub,
 .contact .info-item h4 {
     color: white;
+    margin-top: 10px;
 }
 
 .contact .highlight {
