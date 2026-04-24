@@ -41,6 +41,7 @@
                 <a href="#about">About Me</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -52,7 +53,7 @@
             <div class="hero-text hidden-left">
                 <!-- SVG Draw Animation for Name -->
                 <svg class="name-svg" viewBox="0 0 900 120" preserveAspectRatio="xMinYMid meet">
-                    <text x="0" y="80%" class="name-text">AFSHN SHEIKH</text>
+                    <text x="0" y="80%" class="name-text">AFSHEEN SHEIKH</text>
                 </svg>
                 <h2 class="role-title">Fullstack Developer</h2>
                 <p class="subtitle">Building premium, high-performance web applications with a focus on modern aesthetic
@@ -169,6 +170,76 @@
             </div>
         </div>
     </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="experience section-spacing glass-section">
+        <div class="container">
+            <div class="section-header hidden-up">
+                <h2>Experience & <span class="highlight">Industry Exposure</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="experience-timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="experience-card hidden-up">
+                        <div class="exp-header">
+                            <span class="exp-category">Experience</span>
+                            <h3 class="exp-title">Virtual Web Development Internship</h3>
+                        </div>
+                        <p class="exp-desc">Completed a virtual web development internship involving frontend and backend development tasks, responsive UI implementation, debugging, and practical exposure to real-world development workflows.</p>
+                        <ul class="exp-highlights">
+                            <li><i class="fas fa-check-circle"></i> Responsive web design</li>
+                            <li><i class="fas fa-check-circle"></i> Frontend + backend development</li>
+                            <li><i class="fas fa-check-circle"></i> Debugging and optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Project-based development experience</li>
+                        </ul>
+                        <a href="assets/Certificate.pdf" class="exp-btn" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="experience-card hidden-up" style="transition-delay: 0.2s;">
+                        <div class="exp-header">
+                            <span class="exp-category">Industry Exposure</span>
+                            <h3 class="exp-title">Freelance Web Development (Ongoing)</h3>
+                        </div>
+                        <p class="exp-desc">Working on real-world web development projects focused on building modern responsive business websites, digital presence solutions, and custom web experiences for clients.</p>
+                        <ul class="exp-highlights">
+                            <li><i class="fas fa-check-circle"></i> Portfolio websites</li>
+                            <li><i class="fas fa-check-circle"></i> Business websites</li>
+                            <li><i class="fas fa-check-circle"></i> WhatsApp integration</li>
+                            <li><i class="fas fa-check-circle"></i> Client communication and requirement understanding</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="experience-card hidden-up" style="transition-delay: 0.4s;">
+                        <div class="exp-header">
+                            <span class="exp-category">Client Project</span>
+                            <h3 class="exp-title">Tourism Web App (Client Project – In Progress)</h3>
+                        </div>
+                        <p class="exp-desc">Currently building a Rajasthan tourism platform for hotel bookings, travel itineraries, transportation management, and destination discovery with strong backend architecture and premium UI.</p>
+                        <ul class="exp-highlights">
+                            <li><i class="fas fa-check-circle"></i> Real-world problem solving</li>
+                            <li><i class="fas fa-check-circle"></i> Full-stack development</li>
+                            <li><i class="fas fa-check-circle"></i> .NET backend architecture</li>
+                            <li><i class="fas fa-check-circle"></i> PostgreSQL integration</li>
+                            <li><i class="fas fa-check-circle"></i> UI/UX planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
 
@@ -176,7 +247,6 @@
 
     <section id="contact" class="contact section-spacing">
         <div class="container">
-
             <div class="section-header hidden-up">
                 <h2>Get In <span class="highlight">Touch</span></h2>
                 <div class="line"></div>
@@ -184,28 +254,55 @@
             </div>
 
             <div class="contact-wrapper hidden-up" style="transition-delay: 0.2s;">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <h4>Email</h4>
-                        <p><a href=" mailto:sheikhafsheen06@gmail.com">sheikhafsheen06@gmail.com</a></p>
+                <div class="contact-left">
+                    <div class="branding-logo">
+                        <svg class="dynamic-logo" width="180" height="50">
+                            <defs>
+                                <filter id="isolate-logo-contact" color-interpolation-filters="sRGB">
+                                    <feColorMatrix type="luminanceToAlpha" result="alpha-mask" />
+                                    <feComponentTransfer in="alpha-mask" result="thresholded-alpha">
+                                        <feFuncA type="linear" slope="3.5" intercept="-1.5" />
+                                    </feComponentTransfer>
+                                    <feFlood flood-color="currentColor" result="solid-color" />
+                                    <feComposite in="solid-color" in2="thresholded-alpha" operator="in" />
+                                </filter>
+                            </defs>
+                            <image href="assets/Logo.png" x="0" y="0" width="180" height="50"
+                                preserveAspectRatio="xMinYMid meet" filter="url(#isolate-logo-contact)" />
+                        </svg>
+                    </div>
+                    <h2 class="branding-name">AFSHEEN SHEIKH</h2>
+                    <p class="branding-role">Full Stack Developer</p>
+                </div>
+
+                <div class="contact-right">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <span>Email</span>
+                                <a href="mailto:sheikhafsheen06@gmail.com">sheikhafsheen06@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-text">
+                                <span>Phone</span>
+                                <a href="tel:+917734930921">+91 7734930921</a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <h4>Phone</h4>
-                        <p><a href="tel:+917734930921">+91 7734930921</a></p>
-
-                        <div class="social-links">
-                            <a href="https://github.com/Afsheen116"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/afsheen-sheikh-50aba833a"><i
-                                    class="fab fa-linkedin"></i></a>
-                            <a href="https://wa.me/917734930921?text=Hello%20Afsheen%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect!"
-                                target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                        </div>
+                    <div class="social-hub">
+                        <a href="https://github.com/Afsheen116" aria-label="GitHub" class="social-btn"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/afsheen-sheikh-50aba833a" aria-label="LinkedIn" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/917734930921?text=Hello%20Afsheen%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect!" 
+                           target="_blank" aria-label="WhatsApp" class="social-btn"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Footer -->

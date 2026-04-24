@@ -2,28 +2,44 @@ const db = require('./db');
 
 const projects = [
     {
-        title: "Analytics Dashboard",
-        description: "Real-time reporting, clean data storytelling, and a secure backend built for high-volume product teams.",
-        techStack: "React, Node.js, Chart.js",
-        liveLink: "#contact",
+        title: "ERP Management System",
+        description: "Built a role-based ERP system using .NET and SQL Server. Implemented CRUD operations, backend logic, and scalable module architecture for business operations.",
+        techStack: "ASP.NET, C#, SQL Server, JS",
+        liveLink: "#",
         githubLink: "",
-        image: "assets/project1.png"
+        image: "assets/erp.png"
     },
     {
-        title: "NexShop Platform",
-        description: "Mobile-first shopping flows with layered filtering, fast checkout, and payment-ready product architecture.",
-        techStack: "Next.js, Stripe, MongoDB",
-        liveLink: "#contact",
-        githubLink: "",
-        image: "assets/project2.png"
+        title: "Real-Time Chat App",
+        description: "A full-featured MERN stack chat platform with real-time bidirectional communication, user authentication, and responsive terminal-like UI.",
+        techStack: "React, Socket.io, Node.js, Express",
+        liveLink: "",
+        githubLink: "https://github.com/Afsheen116/ChatApp",
+        image: "assets/chat.png"
     },
     {
-        title: "Pulse CRM Suite",
-        description: "Lead intelligence, activity pipelines, and polished management tools for fast-moving customer teams.",
-        techStack: "TypeScript, PostgreSQL, REST API",
-        liveLink: "#contact",
+        title: "Weather App",
+        description: "Built a responsive weather application using API integration to fetch real-time weather data with dynamic UI updates.",
+        techStack: "JS, OpenWeather API, CSS, HTML",
+        liveLink: "",
+        githubLink: "https://github.com/Afsheen116/WeatherApp",
+        image: "assets/weather.png"
+    },
+    {
+        title: "Zenvest - Student Fintech",
+        description: "A financial planning platform for students to manage budgeting, savings, and financial literacy through an intuitive experience.",
+        techStack: "React, Firebase, Chart.js",
+        liveLink: "",
         githubLink: "",
-        image: "assets/project1.png"
+        image: "assets/zenvest.png"
+    },
+    {
+        title: "Rajasthan Tourism Pro",
+        description: "A comprehensive tourism platform for hotel bookings, customized itineraries, and transport management with elite UI standards.",
+        techStack: ".NET Core, React, PostgreSQL",
+        liveLink: "",
+        githubLink: "",
+        image: "assets/tourism.png"
     }
 ];
 

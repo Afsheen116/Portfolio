@@ -12,44 +12,48 @@ document.addEventListener("DOMContentLoaded", () => {
     const projectFeedback = document.querySelector("#projectFeedback");
     const prevProjectButton = document.querySelector(".project-nav.prev");
     const nextProjectButton = document.querySelector(".project-nav.next");
-    const contactForm = document.querySelector("#contactForm");
-    const formStatus = document.querySelector("#formStatus");
-    const submitButton = document.querySelector(".submit-btn");
     const defaultProjects = [
         {
-            title: "Analytics Dashboard",
-            description: "Real-time reporting, clean data storytelling, and a secure backend built for high-volume product teams.",
-            techStack: ["React", "Node.js", "Chart.js"],
-            liveLink: "#contact",
-            githubLink: "",
-            image: "assets/project1.png"
+            title: "ERP Management System",
+            description: "Built a role-based ERP system using .NET and SQL Server. Implemented CRUD operations, backend logic, and scalable module architecture for business operations.",
+            techStack: ["ASP.NET", "C#", "SQL Server", "JS"],
+            liveLink: "#",
+            buttonText: "Case Study",
+            image: "assets/erp.png"
         },
         {
-            title: "NexShop Platform",
-            description: "Mobile-first shopping flows with layered filtering, fast checkout, and payment-ready product architecture.",
-            techStack: ["Next.js", "Stripe", "MongoDB"],
-            liveLink: "#contact",
-            githubLink: "",
-            image: "assets/project2.png"
+            title: "Real-Time Chat App",
+            description: "A full-featured MERN stack chat platform with real-time bidirectional communication, user authentication, and responsive terminal-like UI.",
+            techStack: ["React", "Socket.io", "Node.js", "Express"],
+            githubLink: "https://github.com/Afsheen116/ChatApp",
+            buttonText: "GitHub",
+            image: "assets/chat.png"
         },
         {
-            title: "Pulse CRM Suite",
-            description: "Lead intelligence, activity pipelines, and polished management tools for fast-moving customer teams.",
-            techStack: ["TypeScript", "PostgreSQL", "REST API"],
-            liveLink: "#contact",
-            githubLink: "",
-            image: "assets/project1.png"
+            title: "Weather App",
+            description: "Built a responsive weather application using API integration to fetch real-time weather data with dynamic UI updates.",
+            techStack: ["JS", "OpenWeather API", "CSS", "HTML"],
+            githubLink: "https://github.com/Afsheen116/WeatherApp",
+            buttonText: "GitHub",
+            image: "assets/weather.png"
+        },
+        {
+            title: "Zenvest - Student Fintech",
+            description: "A financial planning platform for students to manage budgeting, savings, and financial literacy through an intuitive experience.",
+            techStack: ["React", "Firebase", "Chart.js"],
+            buttonText: "In Progress",
+            image: "assets/zenvest.png"
+        },
+        {
+            title: "Rajasthan Tourism Pro",
+            description: "A comprehensive tourism platform for hotel bookings, customized itineraries, and transport management with elite UI standards.",
+            techStack: [".NET Core", "React", "PostgreSQL"],
+            buttonText: "In Progress",
+            image: "assets/tourism.png"
         }
     ];
 
-    const setFormStatus = (message, isError = false) => {
-        if (!formStatus) {
-            return;
-        }
 
-        formStatus.textContent = message;
-        formStatus.classList.toggle("is-error", isError);
-    };
 
     const setProjectFeedback = (message) => {
         if (!projectFeedback) {
@@ -120,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
         link.href = project.liveLink || project.githubLink || "#contact";
         link.target = link.href.startsWith("http") ? "_blank" : "_self";
         link.rel = link.target === "_blank" ? "noreferrer" : "";
-        link.textContent = project.liveLink ? "Live Demo" : (project.githubLink ? "GitHub" : "Explore");
+        link.textContent = project.buttonText || (project.liveLink ? "Live Demo" : (project.githubLink ? "GitHub" : "Explore"));
 
         info.append(category, title, description, tags, link);
         article.append(imageWrapper, info);
@@ -282,50 +286,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    const initContactForm = () => {
-        if (!contactForm || !submitButton) {
-            return;
-        }
 
-        contactForm.addEventListener("submit", async (event) => {
-            event.preventDefault();
-            setFormStatus("");
-
-            const formData = new FormData(contactForm);
-            const payload = {
-                name: formData.get("name")?.trim(),
-                email: formData.get("email")?.trim(),
-                message: formData.get("message")?.trim()
-            };
-
-            submitButton.disabled = true;
-            submitButton.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
-
-            try {
-                const response = await fetch(`${API_BASE_URL}/contact`, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(payload)
-                });
-
-                const result = await response.json();
-
-                if (!response.ok) {
-                    throw new Error(result.message || "Unable to send your message.");
-                }
-
-                setFormStatus(result.message || "Message sent successfully.");
-                contactForm.reset();
-            } catch (error) {
-                setFormStatus(error.message || "Something went wrong. Please try again.", true);
-            } finally {
-                submitButton.disabled = false;
-                submitButton.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
-            }
-        });
-    };
 
     if (navbar) {
         window.addEventListener("scroll", () => {
@@ -392,7 +353,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    initContactForm();
     loadProjects();
     window.dispatchEvent(new Event("scroll"));
 });
