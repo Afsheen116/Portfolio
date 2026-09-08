@@ -6,7 +6,7 @@ const projects = [
         description: "Built a role-based ERP system using .NET and SQL Server. Implemented CRUD operations, backend logic, and scalable module architecture for business operations.",
         techStack: "ASP.NET, C#, SQL Server, JS",
         liveLink: "#",
-        githubLink: "",
+        githubLink: "https://github.com/Afsheen116",
         image: "assets/erp.png"
     },
     {
@@ -14,7 +14,7 @@ const projects = [
         description: "A full-featured MERN stack chat platform with real-time bidirectional communication, user authentication, and responsive terminal-like UI.",
         techStack: "React, Socket.io, Node.js, Express",
         liveLink: "",
-        githubLink: "https://github.com/Afsheen116/ChatApp",
+        githubLink: "https://github.com/Afsheen116",
         image: "assets/chat.png"
     },
     {
@@ -22,7 +22,7 @@ const projects = [
         description: "Built a responsive weather application using API integration to fetch real-time weather data with dynamic UI updates.",
         techStack: "JS, OpenWeather API, CSS, HTML",
         liveLink: "",
-        githubLink: "https://github.com/Afsheen116/WeatherApp",
+        githubLink: "https://github.com/Afsheen116",
         image: "assets/weather.png"
     },
     {
@@ -30,7 +30,7 @@ const projects = [
         description: "A financial planning platform for students to manage budgeting, savings, and financial literacy through an intuitive experience.",
         techStack: "React, Firebase, Chart.js",
         liveLink: "",
-        githubLink: "",
+        githubLink: "https://github.com/Afsheen116",
         image: "assets/zenvest.png"
     },
     {
@@ -38,7 +38,7 @@ const projects = [
         description: "A comprehensive tourism platform for hotel bookings, customized itineraries, and transport management with elite UI standards.",
         techStack: ".NET Core, React, PostgreSQL",
         liveLink: "",
-        githubLink: "",
+        githubLink: "https://github.com/Afsheen116",
         image: "assets/tourism.png"
     }
 ];
