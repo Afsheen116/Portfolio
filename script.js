@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "A full-featured MERN stack chat platform with real-time bidirectional communication, user authentication, and responsive terminal-like UI.",
       techStack: ["React", "Socket.io", "Node.js", "Express"],
       githubLink: "https://github.com/Afsheen116",
-      buttonText: "View",
+      buttonText: "View details",
       image: "assets/chat.png",
     },
     {
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Built a responsive weather application using API integration to fetch real-time weather data with dynamic UI updates.",
       techStack: ["JS", "OpenWeather API", "CSS", "HTML"],
       githubLink: "https://github.com/Afsheen116",
-      buttonText: "View",
+      buttonText: "View details",
       image: "assets/weather.png",
     },
     {
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "A financial planning platform for students to manage budgeting, savings, and financial literacy through an intuitive experience.",
       techStack: ["React", "Firebase", "Chart.js"],
       githubLink: "https://github.com/Afsheen116",
-      buttonText: "View",
+      buttonText: "View details",
       image: "assets/zenvest.png",
     },
     {
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "A comprehensive tourism platform for hotel bookings, customized itineraries, and transport management with elite UI standards.",
       techStack: [".NET Core", "React", "PostgreSQL"],
       githubLink: "https://github.com/Afsheen116",
-      buttonText: "View",
+      buttonText: "View details",
       image: "assets/tourism.png",
     },
   ];
